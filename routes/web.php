@@ -6,12 +6,12 @@ use App\Http\Controllers\AuthController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('relatorios');
-})->name('welcome');
+    return view('comousar');
+})->name('analise');
 
 Route::get('/dashboard', function () {
     return session()->has('user_id')
-        ? view('welcome')
+        ? view('analise')
         : redirect()->route('login');
 })->name('dashboard');
 
@@ -27,11 +27,7 @@ Route::post('/finance-entry', [AnalyticsController::class, 'saveEntry'])->name('
 Route::post('/finance-entry/{id}/update', [AnalyticsController::class, 'updateEntry'])->name('analytics.updateEntry');
 Route::post('/finance-entry/{id}/remove', [AnalyticsController::class, 'deleteEntry'])->name('analytics.deleteEntry');
 Route::view('/contato', 'contato')->name('contato');
-Route::view('/relatorios', 'relatorios')->name('relatorios');
-
-  //---------------//---//
- //     ALUNO     //   //
-//---------------//---//
+Route::view('/comousar', 'comousar')->name('comousar');
 
 Route::get('/select', [AlunoController::class, 'select'])->name('select');
 Route::get('/insert', [AlunoController::class, 'insert'])->name('insert');

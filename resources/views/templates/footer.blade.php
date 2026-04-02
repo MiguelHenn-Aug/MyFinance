@@ -29,7 +29,7 @@ Links
 <ul class="list-unstyled">
 
 <li class="nav-item">
-    <a class="nav-link {{ request()->routeIs('welcome') ? 'active text-white' : 'text-light' }}" href="{{ route('welcome') }}">
+    <a class="nav-link {{ request()->routeIs('analise') ? 'active text-white' : 'text-light' }}" href="{{ route('analise') }}">
         <i class="bi bi-book"></i> Como Usar
     </a>
 </li>
