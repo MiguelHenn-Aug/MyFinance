@@ -27,3 +27,78 @@ main{
     font-size:1.4rem;
     margin-right:10px;
 }
+
+    .dashboard-header {
+        margin-bottom: 2rem;
+    }
+    .dashboard-header h3 {
+        font-weight: 700;
+        letter-spacing: 0.02em;
+    }
+    .dashboard-header p {
+        max-width: 720px;
+        color: #6c757d;
+    }
+    .dashboard-summary .card {
+        border: 1px solid rgba(0, 0, 0, 0.08);
+        border-radius: 1rem;
+        background: #ffffff;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .dashboard-summary .card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 20px 45px rgba(20, 54, 96, 0.08);
+    }
+    .dashboard-summary .card-body {
+        padding: 1.5rem 1.4rem;
+    }
+    .dashboard-summary .card h6 {
+        letter-spacing: 0.12em;
+        color: #212529;
+        text-transform: uppercase;
+        font-size: 0.75rem;
+        margin-bottom: 0.75rem;
+    }
+    .dashboard-summary .card h2 {
+        font-size: 2.15rem;
+        font-weight: 700;
+    }
+    .balance-card .card-header,
+    .entry-card .card-header,
+    .chart-card .card-header,
+    .history-card .card-header {
+        background-color: #f8f9fa;
+        font-weight: 700;
+        border-bottom: 1px solid #e9ecef;
+    }
+    .card.border-0.shadow-sm {
+        border: 1px solid rgba(0, 0, 0, 0.08);
+        border-radius: 1rem;
+    }
+    .card.border-0.shadow-sm .card-header {
+        border-radius: 1rem 1rem 0 0;
+    }
+    .toggle-buttons .btn {
+        min-width: 145px;
+        border-width: 2px;
+        font-weight: 600;
+    }
+    .toggle-buttons .btn.active {
+        box-shadow: 0 10px 30px rgba(13, 110, 253, 0.16);
+    }
+    .table thead th {
+        border-bottom: 2px solid #dee2e6;
+        font-weight: 700;
+        color: #495057;
+    }
+    .table-hover tbody tr:hover {
+        background: #f8f9fa;
+    }
+    #entry-mode-label {
+        font-weight: 600;
+        display: block;
+        margin-bottom: 0.75rem;
+    }
+    #summary-future {
+        color: #0d6efd;
+    }
